@@ -1,18 +1,17 @@
 /* #region page */
-html{
+html {
   color: #292929;
   line-height: 140%;
-
 }
 
-body{
+body {
   margin: 0;
 }
 
 /* #endregion */
 
 /* #region header */
-.header{
+.header {
   box-sizing: border-box;
   padding: 24px 20px 40px;
   height: 100vh;
@@ -24,47 +23,46 @@ body{
   justify-content: space-between;
 }
 
-.header__top{
+.header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header__top__img{
+.header__top__img {
   display: flex;
 }
 
-.header__icons{
+.header__icons {
   display: flex;
   gap: 24px;
 }
 
-.header__bot_title{
+.header__bot_title {
   margin: 0;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
   font-style: Bold;
   font-size: 36px;
   line-height: 100%;
   letter-spacing: 0;
   vertical-align: middle;
-
 }
 
 /* #endregion */
 
 /* #region icon */
-.icon{
+.icon {
   display: block;
   width: 24px;
   height: 24px;
 }
 
-.icon--phone{
+.icon--phone {
   background-image: url(../images/icons/Icon-phone.png);
 }
 
-.icon--menu{
+.icon--menu {
   background-image: url(../images/icons/Icon-menu.png);
 }
 
