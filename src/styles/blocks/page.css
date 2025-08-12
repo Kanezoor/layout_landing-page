@@ -5,6 +5,10 @@
 
 }
 
+.page:has(.page__menu:target) {
+      overflow: hidden; /* not to scroll the page */
+    }
+
 .page__body {
   margin: 0;
 }
@@ -21,5 +25,4 @@
 .page__menu:target{
   opacity: 1;
   pointer-events: all;
-
 }
