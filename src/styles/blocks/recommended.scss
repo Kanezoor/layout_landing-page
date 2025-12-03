@@ -1,0 +1,21 @@
+@use '../utilis/_mixins' as *;
+@use '../utilis/variables.scss' as *;
+
+.recommended {
+  &__product {
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 1/ -1;
+    }
+
+    @include onDesktop {
+      grid-column: span 4;
+    }
+  }
+
+  &__products {
+    row-gap: 40px;
+    @include pageGrid;
+  }
+}

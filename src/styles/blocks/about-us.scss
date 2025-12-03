@@ -1,0 +1,47 @@
+@use '../utilis/_mixins' as *;
+@use '../utilis/variables' as *;
+
+.about-us {
+  @include pageGrid;
+
+  &__title {
+    grid-column: 1/-1;
+
+    @include onTablet {
+      grid-column: 1 / 4;
+    }
+
+    @include onDesktop {
+      grid-column: 1/ 7;
+    }
+  }
+
+  &__content {
+    margin: 0;
+    grid-column: 1/ -1;
+
+    @include onTablet {
+      grid-column: 4 / -1;
+    }
+
+    @include onDesktop {
+      grid-column: 7 / -1;
+    }
+
+    &__paragraph {
+      margin: 0;
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+      font-family:
+        Space Mono,
+        monospace;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+  }
+}

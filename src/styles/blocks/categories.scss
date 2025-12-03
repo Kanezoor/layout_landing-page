@@ -1,0 +1,60 @@
+@use '../utilis/_mixins' as *;
+@use '../utilis/variables.scss' as *;
+
+.categories {
+  margin: 0;
+  &__wrapper {
+    display: grid;
+    row-gap: 40px;
+
+    @include onTablet {
+      row-gap: 56px;
+    }
+  }
+}
+
+.category {
+  &__images {
+    margin-bottom: 16px;
+    @include pageGrid;
+  }
+
+  &__photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__link {
+    &--square {
+      @include onTablet {
+        grid-column: 2;
+      }
+
+      @include onDesktop {
+        grid-column: 4;
+      }
+    }
+    &--wide {
+      @include onTablet {
+        grid-column: span 4;
+      }
+
+      @include onDesktop {
+        grid-column: span 8;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-family:
+      Space Grotesk,
+      sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0px;
+  }
+}
