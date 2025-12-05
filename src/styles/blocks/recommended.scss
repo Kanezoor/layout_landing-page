@@ -2,11 +2,13 @@
 @use '../utilis/variables.scss' as *;
 
 .recommended {
+  margin-bottom: 96px;
+
   &__product {
     grid-column: 1 / -1;
 
     @include onTablet {
-      grid-column: 1/ -1;
+      grid-column: 1 / -1;
     }
 
     @include onDesktop {
@@ -15,7 +17,8 @@
   }
 
   &__products {
-    row-gap: 40px;
     @include pageGrid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    row-gap: 40px;
   }
 }

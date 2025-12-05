@@ -1,26 +1,54 @@
+@use '../utilis/variables' as *;
+@use '../utilis/__mixins' as *;
+
 .product {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
   &__photo {
     width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background-color: #F2F2F2;
+    margin-bottom: 24px;
+    transition: transform $effect-duration;
   }
-  &__description {
-    font-family:
-      Space Mono,
-      monospace;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 16px;
-    line-height: 140%;
-    letter-spacing: 0;
+
+  &:hover .product__photo {
+    transform: scale(1.05);
   }
-  &__price {
-    font-family:
-      Space Grotesk,
-      sans-serif;
+
+  &__name {
+    margin: 0;
+    margin-bottom: 8px;
+    font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
-    font-style: Bold;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: $main-text-color;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 16px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 140%;
-    letter-spacing: 0;
-    text-align: left;
+    line-height: 150%;
+    color: $main-text-color;
+    opacity: 0.6;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+
+  &__price {
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: $main-text-color;
   }
 }

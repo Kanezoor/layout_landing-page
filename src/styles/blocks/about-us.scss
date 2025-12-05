@@ -4,15 +4,27 @@
 .about-us {
   @include pageGrid;
 
+  grid-template-columns: repeat(var(--columns), 1fr);
+  margin-bottom: 96px;
+
   &__title {
+    margin: 0;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    color: $main-text-color;
     grid-column: 1/-1;
 
     @include onTablet {
       grid-column: 1 / 4;
+      font-size: 40px;
+      margin-bottom: 0;
     }
 
     @include onDesktop {
       grid-column: 1/ 7;
+      font-size: 48px;
     }
   }
 
@@ -30,18 +42,15 @@
 
     &__paragraph {
       margin: 0;
-      &:not(:first-child) {
-        margin-top: 20px;
-      }
-      font-family:
-        Space Mono,
-        monospace;
+      font-family: "Space Mono", monospace;
       font-weight: 400;
-      font-style: Regular;
       font-size: 16px;
       line-height: 140%;
-      letter-spacing: 0px;
-      text-align: left;
+      color: $main-text-color;
+
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
     }
   }
 }
