@@ -1,4 +1,5 @@
 @use '../utilis/mixins' as *;
+@use '../utilis/variables.scss' as *;
 
 .icon {
   display: block;
@@ -15,18 +16,18 @@
   }
 
   &--phone {
-    background-image: url(../images/icons/Icon-phone.png);
+    background-image: url(../images/icons/Icon-Phone-call.svg);
   }
 
   &--menu {
-    background-image: url(../images/icons/Icon-menu.png);
+    background-image: url(../images/icons/Icon-Burger-menu.svg);
 
     &:hover {
-      background-image: url(../images/icons/Icon-menu-hover.png);
+      background-image: url(../images/icons/Icon-Burger-menu-hover.svg);
     }
   }
 
   &--close {
-    background-image: url(../images/icons/Icon-close.png);
+    background-image: url(../images/icons/Icon-Close.svg);
   }
 }
