@@ -1,4 +1,4 @@
-@use '../utilis/_mixins' as *;
+@use '../utilis/mixins' as *;
 
 .icon {
   display: block;
@@ -9,7 +9,7 @@
 
   @include hover(transform, scale(1.2));
 
-  @include onTablet {
+  @include on-tablet {
     height: 32px;
     width: 32px;
   }

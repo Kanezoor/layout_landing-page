@@ -1,4 +1,4 @@
-@use '../utilis/_mixins' as *;
+@use '../utilis/mixins' as *;
 @use '../utilis/variables.scss' as *;
 
 .main {
@@ -8,7 +8,7 @@
     row-gap: 96px;
     padding-block: 64px;
 
-    @include onTablet {
+    @include on-tablet {
       row-gap: 120px;
       padding-block: 120px;
     }

@@ -1,4 +1,4 @@
-@use '../utilis/_mixins' as *;
+@use '../utilis/mixins.scss' as *;
 @use '../utilis/variables.scss' as *;
 
 .categories {
@@ -10,7 +10,7 @@
     flex-direction: column;
     row-gap: 40px;
 
-    @include onTablet {
+    @include on-tablet {
       gap: 56px;
     }
   }
@@ -21,7 +21,7 @@
     align-items: center;
     justify-content: left;
 
-    @include onTablet {
+    @include on-tablet {
       margin-top: 56px;
     }
   }
@@ -46,30 +46,34 @@
     box-sizing: border-box;
     background-color: $main-text-color;
     border: 2px solid transparent;
-    color: #FFF;
-    transition: background-color $effect-duration, transform $effect-duration, color $effect-duration, border-color $effect-duration;
+    color: #fff;
+    transition:
+      background-color $effect-duration,
+      transform $effect-duration,
+      color $effect-duration,
+      border-color $effect-duration;
 
-
-    @include onTablet {
+    @include on-tablet {
       font-size: 20px;
       width: 600px;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       width: 324px;
     }
 
     &:hover {
-      background-color: #F8F8FA;
+      background-color: #f8f8fa;
       color: $main-text-color;
-      border-color: #F0F1F4;
+      border-color: #f0f1f4;
     }
   }
 }
 
 .category {
   &__images {
-    @include pageGrid;
+    @include page-grid(20px);
+
     grid-template-columns: repeat(var(--columns), 1fr);
     margin-bottom: 16px;
     gap: 20px;
@@ -97,11 +101,12 @@
     height: auto;
     min-height: 0;
 
-    @include onTablet {
+    @include on-tablet {
       aspect-ratio: auto;
       height: 184px;
     }
-    @include onDesktop {
+
+    @include on-desktop {
       height: 324px;
     }
 
@@ -110,20 +115,20 @@
     }
 
     &--square {
-      @include onTablet {
+      @include on-tablet {
         grid-column: span 2;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         grid-column: span 4;
       }
     }
     &--wide {
-      @include onTablet {
+      @include on-tablet {
         grid-column: span 4;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         grid-column: span 8;
       }
     }
@@ -131,9 +136,7 @@
 
   &__title {
     margin: 0;
-    font-family:
-      "Space Grotesk",
-      sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
     font-style: Bold;
     font-size: 18px;
@@ -141,7 +144,7 @@
     letter-spacing: 0;
     color: $main-text-color;
 
-    @include onTablet {
+    @include on-tablet {
       font-size: 24px;
     }
   }

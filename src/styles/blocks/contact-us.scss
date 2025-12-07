@@ -1,12 +1,12 @@
 @use '../utilis/variables' as *;
-@use '../utilis/__mixins' as *;
+@use '../utilis/mixins.scss' as *;
 
 .contact-us {
-  @include pageGrid;
+  @include page-grid(40px);
+
   grid-template-columns: repeat(var(--columns), 1fr);
 
   margin-bottom: 96px;
-  row-gap: 40px;
 
   &__title {
     margin: 0;
@@ -18,12 +18,12 @@
 
     grid-column: 1 / -1;
 
-    @include onTablet {
+    @include on-tablet {
       font-size: 40px;
       grid-column: 1 / 4;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       font-size: 48px;
       grid-column: 1 / 6;
       margin-bottom: 24px;
@@ -36,11 +36,11 @@
     flex-direction: column;
     gap: 24px;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 1 / -1;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 1 / 6;
     }
   }
@@ -60,7 +60,7 @@
   &__input {
     width: 100%;
     padding: 16px 14px;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     border: 1px solid transparent;
     border-radius: 8px;
 
@@ -68,16 +68,18 @@
     font-size: 16px;
     color: $main-text-color;
     outline: none;
-    transition: border-color $effect-duration, background-color $effect-duration;
+    transition:
+      border-color $effect-duration,
+      background-color $effect-duration;
     box-sizing: border-box;
 
     &::placeholder {
-      color: #89939A;
+      color: #89939a;
       opacity: 1;
     }
 
     &:focus {
-      background-color: #FFFFFF;
+      background-color: #fff;
       border-color: $main-text-color;
     }
 
@@ -96,7 +98,7 @@
 
     padding: 19px 40px;
     background-color: $main-text-color;
-    color: #FFFFFF;
+    color: #fff;
     border: 2px solid transparent;
     border-radius: 8px;
 
@@ -107,12 +109,15 @@
     letter-spacing: 0;
     cursor: pointer;
 
-    transition: background-color $effect-duration, color $effect-duration, border-color $effect-duration;
+    transition:
+      background-color $effect-duration,
+      color $effect-duration,
+      border-color $effect-duration;
 
     &:hover {
-      background-color: #F8F8FA;
+      background-color: #f8f8fa;
       color: $main-text-color;
-      border-color: #F0F1F4;
+      border-color: #f0f1f4;
     }
   }
 
@@ -123,13 +128,13 @@
     gap: 32px;
     margin-top: 48px;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 1 / -1;
       margin-top: 0;
       padding-left: 0;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 7 / -1;
       padding-left: 0;
       margin-top: 0;
@@ -148,7 +153,7 @@
     font-family: 'Space Mono', monospace;
     font-weight: 400;
     font-size: 14px;
-    color: #89939A;
+    color: #89939a;
   }
 
   &__info-link,

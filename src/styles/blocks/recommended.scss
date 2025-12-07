@@ -1,4 +1,4 @@
-@use '../utilis/_mixins' as *;
+@use '../utilis/mixins.scss' as *;
 @use '../utilis/variables.scss' as *;
 
 .recommended {
@@ -7,18 +7,18 @@
   &__product {
     grid-column: 1 / -1;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 1 / -1;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: span 4;
     }
   }
 
   &__products {
-    @include pageGrid;
+    @include page-grid(40px);
+
     grid-template-columns: repeat(var(--columns), 1fr);
-    row-gap: 40px;
   }
 }

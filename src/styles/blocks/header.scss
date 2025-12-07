@@ -1,4 +1,4 @@
-@use '../utilis/_mixins' as *;
+@use '../utilis/mixins' as *;
 
 .header {
   // display: none !important;
@@ -17,7 +17,7 @@
   &__bot {
     padding-bottom: 40px;
 
-    @include onTablet {
+    @include on-tablet {
       padding-bottom: 65px;
     }
   }
@@ -32,7 +32,7 @@
     letter-spacing: 0;
     vertical-align: middle;
 
-    @include onTablet {
+    @include on-tablet {
       font-size: 48px;
     }
   }

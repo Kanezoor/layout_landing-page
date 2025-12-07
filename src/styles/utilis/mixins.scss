@@ -1,42 +1,45 @@
 @use './variables' as *;
 
-@mixin onTablet {
+@mixin on-tablet {
   @media (min-width: #{$tablet-min-width}) {
     @content;
   }
 }
 
-@mixin onDesktop {
+@mixin on-desktop {
   @media (min-width: #{$desktop-min-width}) {
     @content;
   }
 }
 
-@mixin pageGrid {
+@mixin page-grid($row-gap: 0) {
   --columns: 2;
+
   display: grid;
-  column-gap: 20px;
+  gap: $row-gap 20px;
 
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
-  @include onTablet {
+  @include on-tablet {
     --columns: 6;
-    column-gap: 24px;
+
+    gap: $row-gap 24px;
   }
-  @include onDesktop {
+
+  @include on-desktop {
     --columns: 12;
   }
 }
 
-@mixin contentPaddingInLine() {
+@mixin content-padding-in-line() {
   padding-inline: 20px;
 
-  @include onTablet {
+  @include on-tablet {
     padding-inline: 72px;
     max-width: 600px;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     padding-inline: 120px;
     margin-inline: auto;
     max-width: 1020px;
@@ -44,7 +47,7 @@
 }
 
 .container {
-  @include contentPaddingInLine;
+  @include content-padding-in-line;
 }
 
 @mixin hover($property, $toValue) {

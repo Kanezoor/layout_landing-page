@@ -1,5 +1,5 @@
 @use '../utilis/variables' as *;
-@use '../utilis/__mixins' as *;
+@use '../utilis/mixins' as *;
 
 .product {
   display: flex;
@@ -10,7 +10,7 @@
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: contain;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     margin-bottom: 24px;
     transition: transform $effect-duration;
   }
