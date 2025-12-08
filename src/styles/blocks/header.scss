@@ -1,8 +1,6 @@
 @use '../utilis/mixins' as *;
 
 .header {
-  // display: none !important;
-
   background-image: url(../images/header-bc.png);
   background-size: cover;
   background-position: center;
@@ -12,6 +10,43 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .top-bar__phone-text {
+    display: none;
+
+    @include on-desktop {
+      display: block;
+      font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-align: right;
+    text-transform: uppercase;
+    margin-right: 12px;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    }
+  }
+
+  .top-bar__phone .icon {
+    flex-shrink: 0;
+  }
+  
+  .top-bar__phone {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover .top-bar__phone-text {
+      opacity: 1;
+      transform: translate(0);
+      pointer-events: auto;
+    }
   }
 
   &__bot {
