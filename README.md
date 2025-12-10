@@ -42,3 +42,5 @@ Mobile-First Workflow: I started by designing the mobile view first and used min
 CSS Grid vs. Flexbox: I learned to use Flexbox for one-dimensional layouts (navbars) and Grid for two-dimensional layouts (image galleries), which made the code much cleaner.
 
 * **Semantic HTML:** Focused on using proper tags (`<header>`, `<section>`, `<main>`, `<footer>`) rather than just `<div>` soup to improve accessibility and SEO structure.
+
+<div align="center"> Created by <a href="https://github.com/Kanezoor">Vladyslav Kostiuk</a> </div>
