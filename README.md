@@ -1,24 +1,44 @@
-# Landing Page
+# Nothing Phone (Concept) - Landing Page
 
-> ❗❗ You will complete this task in the **Landing** topic.
-> Now just choose a design and do the parts from the videos.
-> Note: in the first task of this topic you will find 4 examples of landing pages. Choose **only one** of them and create your page.
+![Project Preview](./preview.png)
 
-Choose a design for your landing page:
+## 🔗 Live Demo
+### [👉 Click here to view the deployed website]([https://kanezoor.github.io/layout_landing-page/])
 
-- [MET landing](https://www.figma.com/file/lSR1m42L9YwzQwzzxKwHpw/THE-MET)
-- [MYBIKE landing](https://www.figma.com/file/NZQAIydtHo5QkINyGLHNcq/BIKE-New-Version?node-id=0%3A1)
-- [B&O](https://www.figma.com/file/DtkQmQ797hk0nI4KfMi2Uq/BOSE-New-Version?type=design&node-id=6817-212&t=ZTV6Gl8NzaWkJ4FK-0)
-- [Nothing](https://www.figma.com/file/DtkQmQ797hk0nI4KfMi2Uq/BOSE-New-Version?type=design&node-id=6802-139&t=L7eKz5YKLN0m5WxR-0)
+## 📝 Description
+A fully responsive product landing page inspired by the unique industrial design aesthetic of the "Nothing Phone."
 
-Follow the instructions in this and next lessons to implement the page block by block:
+This project was built to master **Semantic HTML5** and **Modern CSS Layouts**. It replicates the clean, monochrome, and "glitch" aesthetic of the brand while ensuring a seamless user experience across all device sizes (Mobile, Tablet, and Desktop).
 
-- Here is [the design from the video](https://www.figma.com/file/DtkQmQ797hk0nI4KfMi2Uq/BOSE-New-Version?type=design&node-id=6703-88&t=L7eKz5YKLN0m5WxR-0) (❗❗ DO NOT implement this design ❗❗ choose one of the options above ❗❗ ☝️)
-- Start writing styles in the `main.scss` file. It is be explained in the `Sass` lesson.
-- **DON'T** try to do it `Pixel Perfect` - implement it the most `simple` way so it looks similar.
-- When done check yourself using the [CHECKLIST](./checklist.md) when finished.
-- Deploy and create a Pull Request with a [DEMO LINK](https://<your_account>.github.io/layout_landing-page/).
+## 🛠 Technologies Used
+* **Core:** HTML5, CSS3
+* **Styling Techniques:** Flexbox, CSS Grid, Media Queries, CSS Variables
+* **Design:** Mobile-First Approach
+* **Version Control:** Git, GitHub
 
-# Tips & Hints
-- Check `background-image: url()` to be relative to the `main.scss`. So should start with `../images`.
-- If some points from the checklist are not relevant to your design, just skip it.
+## ✨ Key Features
+* **📱 Fully Responsive:** The layout adapts fluidly from mobile screens to wide desktop monitors using custom Media Queries.
+* **🎨 Brand Aesthetic:** Recreated the specific typography and monochrome color palette of the Nothing brand using CSS variables.
+* **⚡ Interactive UI:** Implemented smooth hover states and transitions on buttons and product cards.
+* **Layout Engine:** Utilized a hybrid of **CSS Grid** (for the main product gallery) and **Flexbox** (for navigation and alignment).
+
+## 🚀 How to Run Locally
+Since this is a static site, you don't need a complex build environment.
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/Kanezoor/layout_landing-page/tree/develop]
+2. Navigate to the project folder:
+
+Bash
+
+cd [YOUR FOLDER NAME]
+
+3. Open index.html in your browser (or use the VS Code "Live Server" extension).
+
+🧠 What I Learned
+Mobile-First Workflow: I started by designing the mobile view first and used min-width media queries to expand the layout for larger screens.
+
+CSS Grid vs. Flexbox: I learned to use Flexbox for one-dimensional layouts (navbars) and Grid for two-dimensional layouts (image galleries), which made the code much cleaner.
+
+Semantic HTML: Focused on using proper tags (<header>, <section>, <main>, <footer>) rather than just <div> soup to improve accessibility and SEO structure.
