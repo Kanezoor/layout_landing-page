@@ -1,9 +1,9 @@
 # Nothing Phone (Concept) - Landing Page
 
-![Project Preview](./preview.png)
+![Project Preview](./Preview.png)
 
 ## 🔗 Live Demo
-### [👉 Click here to view the deployed website]([https://kanezoor.github.io/layout_landing-page/])
+### [👉 Click here to view the deployed website](https://kanezoor.github.io/layout_landing-page/)
 
 ## 📝 Description
 A fully responsive product landing page inspired by the unique industrial design aesthetic of the "Nothing Phone."
