@@ -62,7 +62,7 @@
 @media (min-width: 1024px) {
   .header .top-bar__phone-text {
     display: block;
-    font-family: "Inter", sans-serif;
+    font-family: Inter, sans-serif;
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;

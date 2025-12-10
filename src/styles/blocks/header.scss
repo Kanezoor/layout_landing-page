@@ -17,7 +17,7 @@
 
     @include on-desktop {
       display: block;
-      font-family: "Inter", sans-serif;
+      font-family: Inter, sans-serif;
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
@@ -35,7 +35,7 @@
   .top-bar__phone .icon {
     flex-shrink: 0;
   }
-  
+
   .top-bar__phone {
     display: flex;
     align-items: center;
